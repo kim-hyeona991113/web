@@ -1,0 +1,324 @@
+@charset 'utf-8';
+
+body{
+    margin: 0;
+    font-family:"Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;   ;
+}
+
+.container{
+}
+
+.container ul{
+    display: flex;
+    list-style: none;
+}
+.container a{
+    text-decoration: none;
+    color: black;
+}
+.container header h1{
+    color: white;
+    margin-right:auto ;
+    padding-left: 30px;
+    
+}
+.container header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 10000;
+    display: flex;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.container ul li a{
+    display: block;
+    padding: 10px;
+    margin: 0 10px 0 ;
+    font-weight: bold;
+}
+.container #register{
+    position: relative;
+    right: 0;
+}
+/* 소메뉴 */
+.gnb > li > ul {
+    display: none;
+    position: absolute;
+    background-color: gainsboro;
+    padding: 0;
+}
+.gnb> li:hover > ul {
+    display: block;
+  }
+
+  .gnb > li > ul a {
+    display: block;
+    font-size: 1.1em;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .gnb > li > ul li:last-child a {
+    border-bottom:none
+  }
+  .gnb > li > ul a:hover {
+    background-color: lightgray;
+    color:#fff;
+  }
+
+  /* 메인 시작 */
+
+  main .main1{
+    position: a;
+    top:0;
+    width: 100%;
+    height: 1005px;
+    background: url(./pexels-aldys-cattania-10884223.jpg) center center;
+  }
+
+  /* 메인2 */
+
+  main .main2{
+    height: 970px;
+    padding: 95px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    
+  }
+  main .main2 div{
+    height: 485px; width: 864px;
+    display: grid;
+    align-content: center;
+    justify-content: space-around;
+  }
+  main .main2 div:nth-child(1){
+    border-right: 1px solid black;
+    border-bottom:1px solid black ;
+  }
+  main .main2 div:nth-child(2){
+    border-bottom:1px solid black ;
+  }
+  main .main2 div:nth-child(3){
+    border-right: 1px solid black;
+  }
+
+  /* 메인3 */
+
+  main .main3{
+    width: 100%;
+    height: 1150px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    font-size: 0;
+  }
+  main .main3 div{
+    background-position: center;
+  }
+  main .main3 div:nth-child(1){
+    background-image: url(./3/pexels-athena-2962030.jpg);
+    grid-row: 1 / 3;
+  }
+  main .main3 div:nth-child(2){
+    background-image: url(./3/pexels-cottonbro-studio-7872821.jpg);
+  }
+  main .main3 div:nth-child(3){
+    background-image: url(./3/pexels-cottonbro-studio-7872870.jpg);
+  }
+  main .main3 div:nth-child(4){
+    background-image: url(./3/pexels-karolina-grabowska-4041282.jpg);
+    grid-column: 2/4;
+}
+  main .main3 div:nth-child(5){
+    background-image: url(./3/pexels-mathias-reding-5332007.jpg);
+  }
+  main .main3 div:nth-child(6){
+    background-image: url(./3/pexels-nohk-1805818.jpg);
+  }
+  main .main3 div:nth-child(7){
+    background-image: url(./3/pexels-teona-swift-6913376.jpg);
+  }
+/* ourbusiness */
+  main .our_business{
+    height: 2425px;
+    padding: 0 130px 0;
+    display: grid; justify-content: center;
+    grid-template-columns: 833px 833px;
+    grid-template-rows: 415px 1015px 1015px;
+    overflow: hidden;
+  }
+  h4{
+    margin:50px 0 0 0;
+  }
+  main .our_business div:nth-child(1){
+   
+    grid-column: 1 / 3;
+    margin-top: 150px;
+    text-align: center;
+  }
+  main .our_business div:nth-child(n+2){
+    position: relative;
+    width: 800px;
+    height: 1015px;
+  }
+  main .our_business .txt{
+    background-color: #fff;
+    text-align: center;
+    height: 165px ; width: 800px;
+    position: absolute;
+    bottom: 0; 
+    overflow: hidden;
+  }
+  main .our_business div:nth-child(2){
+    background-image: url(./pexels-aldys-cattania-10884223.jpg);
+    
+  }
+  main .our_business div:nth-child(3){
+    background-image: url(./pexels-aldys-cattania-10884223.jpg);
+  }
+  main .our_business div:nth-child(4){
+    background-image: url(./pexels-aldys-cattania-10884223.jpg);
+  }
+  main .our_business div:nth-child(5){
+    background-image: url(./pexels-aldys-cattania-10884223.jpg);
+  }
+/* youtube */
+  main .our_youtube{
+    height: 703px;
+    position: relative;
+    background-color: #eeeeee;
+ 
+  }
+  main .our_youtube div{
+    width: 1727px; height: 404px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 50px; left: 50%;
+    transform:translatex(-50%);
+  }
+  main .our_youtube h2{
+    position: absolute;
+    left: 95px;
+    top:150px;
+  }
+  main .our_youtube p{
+    margin: 0;
+    width: 920px;
+    position: absolute;
+    right: 95px;
+    top:150px;
+  }
+/* service */
+  main .our_service{
+    height: 957px; width: 1870px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  main .our_service h2{
+  height: 315px;
+  text-align: center;
+  line-height: 315px;
+  width: 100%;
+  }
+  main .our_service > div{
+    width: 340px; height: 450px;
+    margin: 22.5px;
+    position: relative;
+    box-shadow: 0 0 50px gainsboro;
+  }
+  main .our_service div .txt{
+    height: 66px; width: 320px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0 ;
+    padding: 50px 10px 50px 10px;
+  }
+  main .our_service div .txt h4{
+    margin: 0;
+  }
+  main .our_service .our1{
+    background: url(./our_service/pexels-bennie-lukas-bester-1217205.jpg) center;
+  }
+  main .our_service .our2{
+    background: url(./our_service/pexels-karolina-grabowska-4041119.jpg) center;
+  }
+  main .our_service .our3{
+    background: url(./our_service/pexels-karolina-grabowska-4041386.jpg) center;
+  }
+  main .our_service .our4{
+    background: url(./our_service/pexels-karolina-grabowska-4210784.jpg) center;
+  }
+/* location */
+  main .location{
+    height: 1020px;
+    width: 100%;
+    position: relative;
+  }
+  main .location h2{
+    text-align: center;
+  }
+
+  main .location .box{
+    height: 77px; width: 255px;
+    background-color: #4c4c4c;
+    padding: 10px 0 10px 10px;
+    position: absolute;
+    left: 200px; top: 70px;
+    color: white;
+  }
+
+  main .location ul{
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    bottom: 150px; left: 50%;
+    transform:translatex(-50%);
+    margin: auto;
+    font-style: normal;
+    border-bottom: 1px solid black;
+  }
+  main .location ul li{
+    height: 70px; width: 1530px;
+    margin: auto;
+    border-bottom: 1px solid black;
+    line-height: 70px;
+  }
+  main .letstalk p,main .letstalk h2{
+    margin-bottom: 0;
+  }
+ 
+  main .letstalk{
+    height: 500px;
+    background-image:url(./pexels-eberhard-grossgasteiger-2088170.jpg);
+    background-attachment:fixed;
+    text-align: center;
+    color: navy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  main .letstalk a{
+    color: navy;
+    display: block;
+    border: 1px solid;
+    width: 150px; height: 47px;
+    text-align: center;
+    line-height: 47px;
+    margin-top: 58px;
+
+  }
+
+  footer{
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
